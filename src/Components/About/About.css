@@ -1,0 +1,123 @@
+.about-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+    position: relative;
+    font-family: Poppins;
+}
+
+.about-title h1 {
+    padding: 0px 30px;
+    font-size: 70px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+.about-sections {
+    display: flex;
+    margin-left: 190px;
+}
+
+.about-right {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.about-para {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Inter;
+    margin-left: -13px;
+    margin-top: -30px;
+    
+
+}
+
+.about-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: Inter;
+}
+
+.about-skill {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.about-skill p {
+    min-width: 150px;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.about-skill hr {
+    outline: none;
+    border: none;
+    width: 50%;
+    height: 7px;
+    background: linear-gradient(264deg, #3f94df -5%, #9b59b6 106%);
+    border-radius: 50px;
+}
+
+.about-skill:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .about {
+        gap: 80px;
+        margin: 20px; 
+        align-items: center; 
+    }
+
+    .about-title {
+        margin: 20px; 
+        font-size: 40px;
+        padding: 0;
+    }
+
+    .about-sections {
+        flex-direction: column; 
+        margin-left: 0; 
+    }
+
+    .about-right {
+        width: 100%; 
+        align-items: center; 
+    }
+
+    .about-para {
+        font-size: 18px; 
+        line-height: 28px; 
+        margin-left: 0;
+        padding: 0 10px; 
+    }
+
+    .about-skill {
+        gap: 20px;
+        align-items: center;
+        flex-direction: column; 
+    }
+
+    .about-skill p {
+        font-size: 20px;
+        min-width: auto;
+    }
+
+    .about-skill hr {
+        width: 100%; 
+        height: 6px;
+    }
+}

@@ -1,0 +1,112 @@
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:20px 90px;
+    
+}
+
+.navmenu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap:60px;
+    font-size: 20px;
+    font-family: roboto;
+}
+
+.nav-logo {
+    color: #ffffff; 
+    font-size: 24px; 
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav-connect:hover {
+    transform: scale(1.05) translateX(-20px); 
+}
+
+.navmenu li{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.navmenu li img{
+    display: flex;
+    margin: auto;
+}
+
+.anchor-link{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.nav-mob-close{
+    display: none;
+}
+
+.nav-mob-open{
+    display: none;
+}
+
+button {
+    background-color:#3f94df;
+    padding: 15px 40px;
+    font-size: 20px;
+    font-family:roboto;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+@media(max-width: 768px) {
+    .navbar {
+        margin: 20px 50px;
+    }
+
+    button {
+        display: none;
+    }
+
+    .nav-mob-open {
+        display: block;
+        position: fixed;
+        right: 30px;
+    }
+
+    .nav-mob-close {
+        display: block;
+        position: relative;
+        top: 30px;
+        left: 290px;
+        width: 30px;
+    }
+
+    .navmenu {
+        position: fixed;
+        flex-direction: column;
+        align-items: start;
+        top: 0;
+        gap: 30px;
+        background-color: #0a0a0a;
+        width: 350px;
+        height: 100%;
+        z-index: 2;
+        transition: right 0.5s;
+        right: -450px;
+    }
+
+    .navmenu li {
+        font-size: 30px;
+        padding-left: 100px;
+        flex-direction: row;
+        gap: 20px;
+    }
+}
